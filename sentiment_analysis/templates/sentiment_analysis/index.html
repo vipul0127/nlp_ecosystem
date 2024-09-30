@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sentiment Analysis</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sentiment Analysis</h1>
+        <h2>Analyze a Sentence</h2>
+        <form method="post">{% csrf_token %}
+            {{ sentence_form.as_p }}
+            <button type="submit" class="btn btn-primary">Analyze</button>
+       
+    </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spam Detection Form</title>
+</head>
+<body>
+    <h1>Spam Detection Form</h1>
+    <form method="POST" action="">
+        {% csrf_token %}
+        <label for="message">Enter Message:</label>
+        <textarea name="message" id="message" rows="5" cols="50"></textarea><br><br>
+        <button type="submit">Classify Message</button>
+    </form>
+</body>
+</html>
