@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion Detection</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-4">Emotion Detection</h1>
+        <form method="post">
+            {% csrf_token %}
+            <div class="form-group">
+                <textarea name="text" class="form-control" rows="3" placeholder="Enter your text here..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Analyze</button>
+        </form>
+        {% if detected_emotion_name %}
+        <h2 class="mt-4">Results:</h2>
+        <p><strong>Emotion:</strong> {{ detected_emotion_name }} {{ detected_emotion_emoji }}</p>
+        <a class="btn btn-secondary mt-3" href="/">Go Back</a>
+        {% endif %}
+    </div>
+</body>
+</html>

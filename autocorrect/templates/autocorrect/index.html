@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Correction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1 {
+            color: #008CBA; /* Blue color */
+        }
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #008CBA; /* Blue color */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #007bb5; /* Darker blue */
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #008CBA; /* Blue color */
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Word Correction</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <textarea name="message" rows="4" cols="50" placeholder="Type a word..."></textarea><br>
+        <button type="submit">Submit</button>
+    </form>
+    {% if user_input %}
+    <h2>Response</h2>
+    <p><strong>Original Message:</strong> {{ user_input }}</p>
+    {% if error_message %}
+        <p>{{ error_message }}</p>
+    {% else %}
+        <p><strong>Suggested Corrections:</strong></p>
+        {{ corrected_suggestions|safe }}
+    {% endif %}
+    {% endif %}
+</body>
+</html>
