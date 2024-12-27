@@ -7,33 +7,55 @@ The <strong>NLP Ecosystem</strong> project is a comprehensive collection of natu
 
 <h2>Home Page Interface</h2>
 <p>
-The first home page acts as a central hub, providing users with an intuitive interface to access all the sub-projects. Each application (e.g., Autocorrect, Emotion Detection, Sentiment Analysis, etc.) is displayed as a clickable card or button on the home page. Users can click on an option to navigate to the respective application and use its functionalities.
+The home page provides an intuitive central interface where users can access the applications. Each application is displayed with a description, and clicking on a card redirects to the respective app's interface.
 </p>
 <p>
-Below is an example layout of the home page:
+Below is an example image of the home page interface:
 </p>
-<ul>
-  <li><strong>Autocorrect</strong>: <em>[Include an image of the autocorrect app interface here]</em></li>
-  <li><strong>Emotion Detection</strong>: <em>[Include an image of the emotion detection app interface here]</em></li>
-  <li><strong>Sentiment Analysis</strong>: <em>[Include an image of the sentiment analysis app interface here]</em></li>
-  <li><strong>Spam Detection</strong>: <em>[Include an image of the spam detection app interface here]</em></li>
-  <li><strong>Summarizer</strong>: <em>[Include an image of the summarizer app interface here]</em></li>
-</ul>
+<img src="https://media.licdn.com/dms/image/v2/D4E2DAQHS3suFtm4rrQ/profile-treasury-image-shrink_1280_1280/profile-treasury-image-shrink_1280_1280/0/1727890732752?e=1735887600&v=beta&t=0AdFUtAdCoQpjnsqQqfYMyGkIT7rDu3bdswYEwqOSfs" alt="Home Page Interface" style="width:70%; margin:auto; display:block;">
+
+<h2>Features and Applications</h2>
+
+<h3>1. Autocorrect</h3>
 <p>
-Each app's card also contains a brief description of its purpose and a "Learn More" button to access further details.
+The Autocorrect app implements a spell correction system using algorithms like Jaccard similarity. It provides users with the top 10 suggestions for incorrect spellings and helps refine text input for better accuracy.
+</p>
+<img src="https://media.licdn.com/dms/image/v2/D4E2DAQFXO6krhJ9_pw/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1727890863727?e=1735887600&v=beta&t=cAG-U6bM8qlFvSGalmZkbD3vfecvtcCxXsePG7xX2Eg" alt="Autocorrect App Interface" style="width:70%; margin:auto; display:block;">
+
+<h3>2. Emotion Detection</h3>
+<p>
+This app analyzes text to detect the emotions expressed, such as joy, sadness, anger, fear, and more. It uses advanced machine learning techniques to understand emotional tones in written communication.
+</p>
+<img src="https://media.licdn.com/dms/image/v2/D4E2DAQH3kJw7flxD5g/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1727890760976?e=1735887600&v=beta&t=x1uPHCThXondOCvTeW9X1iBSlfgT7iToGzK6fKjvd_c" alt="Emotion Detection App Interface" style="width:70%; margin:auto; display:block;">
+
+<h3>3. Sentiment Analysis</h3>
+<p>
+The Sentiment Analysis app determines the sentiment polarity of a given text, identifying whether it's positive, negative, or neutral. This is particularly useful for analyzing customer feedback, reviews, and opinions.
+</p>
+<img src="https://media.licdn.com/dms/image/v2/D4E2DAQE4XFQNfYms-Q/profile-treasury-image-shrink_8192_8192/profile-treasury-image-shrink_8192_8192/0/1727890837298?e=1735887600&v=beta&t=jkQXEWgwhgr2QDnQ7w0z4hyGhS1V_66-2H2gN6O-kE4" alt="Sentiment Analysis App Interface" style="width:70%; margin:auto; display:block;">
+
+<h3>4. Spam Detection</h3>
+<p>
+This app identifies spam messages and filters them out from legitimate communication. It uses classification models trained on datasets to differentiate between spam and non-spam messages.
+</p>
+<img src="https://media.licdn.com/dms/image/v2/D4E2DAQHuxgerS3l_yA/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1727890781249?e=1735887600&v=beta&t=QO_APLPeVT0Jkd1VHpWHbu-hKUDEwwBHAk9-StWaBDw" alt="Spam Detection App Interface" style="width:70%; margin:auto; display:block;">
+
+<h3>5. Summarizer</h3>
+<p>
+The Summarizer app condenses large pieces of text into concise summaries while retaining the main ideas. It’s ideal for processing lengthy articles, research papers, and documents.
+</p>
+<img src="https://media.licdn.com/dms/image/v2/D4E2DAQFBFg1o0Wyp9w/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1727890807815?e=1735887600&v=beta&t=f_MI9BPtJiLtMypHrcnoQ8JYSR-Xd7NLjpRqAbWzn4E" alt="Summarizer App Interface" style="width:70%; margin:auto; display:block;">
+
+<h3>6. Core NLP</h3>
+<p>
+The Core NLP app provides foundational tools for tasks like tokenization, stemming, lemmatization, and basic text preprocessing. These functions serve as building blocks for more complex NLP workflows.
 </p>
 
-<h2>Features</h2>
-<p>This ecosystem includes the following sub-projects:</p>
-<ul>
-  <li><strong>Autocorrect</strong>: Implements a spell correction system using algorithms like Jaccard similarity to suggest top similar words for incorrect spellings.</li>
-  <li><strong>Emotion Detection</strong>: Analyzes text data to identify the emotions expressed, such as joy, sadness, anger, etc.</li>
-  <li><strong>Sentiment Analysis</strong>: Determines the sentiment polarity (positive, negative, neutral) of text, ideal for analyzing reviews and feedback.</li>
-  <li><strong>Spam Detection</strong>: Identifies and filters spam messages from legitimate communication using machine learning models.</li>
-  <li><strong>Summarizer</strong>: Summarizes large pieces of text into concise and meaningful information.</li>
-  <li><strong>NLP Core</strong>: Provides foundational functions and tools for performing basic NLP tasks, like tokenization, stemming, and lemmatization.</li>
-  <li><strong>MyApp</strong>: Serves as the main hub or interface to access all the sub-projects, integrating their functionalities into a unified user experience.</li>
-</ul>
+<h3>7. MyApp</h3>
+<p>
+The MyApp application serves as the main hub for accessing all other apps in this ecosystem. It provides a seamless navigation experience and ensures all functionalities are integrated into a unified system.
+</p>
+
 
 <h2>Project Structure</h2>
 <p>The repository is organized as follows:</p>
@@ -67,10 +89,9 @@ cd nlp_ecosystem</code></pre>
 </ol>
 
 <h2>Usage</h2>
-<p>Each sub-project can be accessed through the main application (<code>MyApp</code>). Once the server is running, navigate to the home page to select and explore the available NLP functionalities. Each app interface provides easy-to-use options for performing specific NLP tasks.</p>
-
-<h2>Deployment</h2>
-<p>The project can be deployed using platforms like Vercel for hosting. The configuration file (<code>vercel.json</code>) ensures smooth deployment.</p>
+<p>
+Once the server is running, navigate to the home page to access the NLP applications. Each app's interface is user-friendly and allows for performing specific NLP tasks seamlessly.
+</p>
 
 <h2>Contributing</h2>
 <p>Contributions are welcome! Please follow these steps to contribute:</p>
